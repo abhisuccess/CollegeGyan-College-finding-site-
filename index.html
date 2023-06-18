@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CollegeGyan</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* CSS for responsive table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Responsive design for smaller screens */
+    @media screen and (max-width: 600px) {
+      table {
+        border: none;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        display: none;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      table td {
+        border-bottom: none;
+        display: block;
+        text-align: right;
+      }
+
+      table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+     /* CSS for responsive college grid */
+     .college-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .college-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    .button-container {
+      text-align: center;
+    }
+
+    .view-more-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .view-more-button:hover{
+      background-color: #e9512c;
+    }
+
+    /* Responsive design for smaller screens */
+    @media screen and (max-width: 600px) {
+      .button-container {
+        text-align: center;
+      }
+    }
+
+    /* Responsive design for smaller screens */
+    @media screen and (max-width: 600px) {
+      .college-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .founder-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .founder-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .founder-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .social-media-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-media-icons li {
+      margin: 0 5px;
+    }
+
+    .social-media-icons a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="abhisuccess"><span class="highlight1">C</span>ollege <span class="highlight">G</span>yan </h1>
+    <img src="img/giphy.gif" alt="" width="45px">
+    <h3 class="h3college">An ultimate website for college students</h3>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for colleges.....!" class="search-input">
+      <button class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#table1">Colleges</a></li>
+          <li><a href="https://abhisuccess.netlify.app/">About</a></li>
+          <li><a href="#hero1">Contact</a></li>
+        </ul>
+      </nav>
+      <br>
+  </header>
+  <br>
+  <div class="college-grid">
+    <div class="college-card">
+      <h2>Medical</h2>
+      <p>AIIMS, Delhi</p>
+      <p>PGIMER, Chandigarh</p>
+      <p>Christian Medical College, TN</p>
+      <a class="view-more-button" href="https://www.nirfindia.org/2023/MedicalRanking.html">View More</a>
+    </div>
+    <div class="college-card">
+      <h2>Law</h2>
+      <p>National Law School, Bengaluru</p>
+      <p>National Law University, New Delhi</p>
+      <p>Nalsar University of Law, Hyderabad</p>
+      <a class="view-more-button" href="https://www.nirfindia.org/2023/LawRanking.html">View More</a>
+    </div>
+    <div class="college-card">
+      <h2>Management</h2>
+      <p>IIM, Ahmedabad</p>
+      <p>IIM, Bengaluru</p>
+      <p>IIM, Kozhikode</p>
+      <a class="view-more-button" href="https://www.nirfindia.org/2023/ManagementRanking.html">View More</a>
+    </div>
+    <div class="college-card">
+      <h2>Architecture</h2>
+      <p>IIT, Roorkee</p>
+      <p>NIT, Calicut</p>
+      <p>IIT, Kharagpur</p>
+      <a class="view-more-button" href="https://www.nirfindia.org/2023/ArchitectureRanking.html">View More</a>
+    </div>
+  </div>
+  <main>
+    <h2 class="Abhi">Top 10 <span class="highlight">Engineering Colleges</span> 2023</h2>
+      <img src="img/giphy-preview.gif" alt="" class="center">
+    <section class="college-list" id="hero">
+      <div class="college">
+        <img src="img/iit madras.jpeg" alt="IIT Madras">
+        <h3>Indian Institute of Technology, Madras</h3>
+        <p>Indian Institute of Technology Madras (IIT Madras) is one of the premier engineering institutes in India. Established in 1959, it is located in Chennai, Tamil Nadu. IIT Madras is recognized as an Institute of National Importance and is renowned for its excellence in education, research, and innovation.
+          <br>
+        <br>
+        IIT Madras is known for its rigorous academic programs, strong industry connections, and a vibrant campus life. It continues to strive for excellence in education and research while nurturing innovation and entrepreneurship.
+        </p>
+        <a href="https://www.iitm.ac.in/">Learn More</a>
+      </div>
+      <div class="college">
+        <img src="img/708599-iitdelhi.jpg" alt="College 2">
+        <h3>Indian Institute of Technology, Delhi</h3>
+        <p>Indian Institute of Technology Delhi (IIT Delhi) is a prestigious engineering institute located in Hauz Khas, New Delhi. Established in 1961, IIT Delhi is one of the premier technical institutes in India and is renowned for its academic excellence, research contributions, and technological innovations.
+        <br>
+        <br>
+          IIT Delhi continues to uphold its reputation as a premier engineering institute in India, fostering academic excellence, research advancements, and technological innovations. With its emphasis on multidisciplinary education and a vibrant campus life, it prepares students for successful careers and leadership roles in their respective fields.
+        </p>
+        <a href="http://www.iitd.ac.in/">Learn More</a>
+      </div>
+      <div class="college">
+        <img src="img/iit-b-new.jpg" alt="College 2">
+        <h3>Indian Institute of Technology, Bombay</h3>
+        <p>Indian Institute of Technology Bombay (IIT Bombay) is a leading engineering institution located in Powai, Mumbai, Maharashtra. Established in 1958, IIT Bombay is recognized as one of the top technical institutes in India and is renowned for its academic excellence, research contributions, and entrepreneurial culture.
+        <br>
+        <br>
+        IIT Bombay continues to be at the forefront of engineering education, research, and innovation in India. With its emphasis on academic rigor, interdisciplinary learning, and entrepreneurial spirit, it nurtures students to become future leaders and contributes to advancements in science.
+        </p>
+        <a href="https://www.iitb.ac.in/">Learn More</a>
+      </div>
+      <div class="college">
+        <img src="img/IIT-Kanpur.webp" alt="College 2">
+        <h3>Indian Institute of Technology, Kanpur</h3>
+        <p>Indian Institute of Technology Kanpur (IIT Kanpur) is a premier educational institution located in Kanpur, Uttar Pradesh, India. It was established in 1959 as one of the first IITs in the country. Known for its academic excellence and rigorous curriculum, IIT Kanpur is widely regarded as one of the top engineering institutes in India.
+        <br>
+        <br>
+        IIT Kanpur has consistently ranked among the top engineering institutes in India and has made significant contributions to the fields of science, engineering, and technology. It continues to nurture talented individuals and provide them with a comprehensive educational experience to excel in their chosen domains.
+        </p>
+        <a href="https://www.iitk.ac.in/">Learn More</a>
+      </div>
+      <div class="college">
+        <img src="img/iit-kharagpur-dh-1167849-1669996227.png" alt="College 2">
+        <h3>Indian Institute of Technology, Kharagpur</h3>
+        <p>Indian Institute of Technology Kharagpur (IIT Kharagpur) is a prestigious educational institution located in Kharagpur, West Bengal, India. Established in 1951, it was the first IIT to be established in India and is recognized as an Institute of National Importance. IIT Kharagpur is renowned for its academic excellence, research contributions, and culture.
+        <br>
+        <br>
+        IIT Kharagpur's commitment to excellence, research-driven approach, and emphasis on innovation have contributed significantly to the development of science, engineering, and technology in India. It continues to nurture bright minds and empower thems.
+        </p>
+        <a href="https://www.iitkgp.ac.in/">Learn More</a>
+      </div>
+      <div class="college">
+        <img src="img/iit rorke1.jpg" alt="College 2">
+        <h3>Indian Institute of Technology, Roorkee</h3>
+        <p>Indian Institute of Technology Roorkee (IIT Roorkee) is a renowned technical institution located in Roorkee, Uttarakhand, India. Established in 1847 as the Thomason College of Civil Engineering, it is one of the oldest engineering colleges in India and was converted into an IIT in 2001. IIT Roorkee is known for its rich heritage, academic excellence, and contributions to research and development.
+        <br>
+        <br>
+        IIT Roorkee's rich history, academic excellence, and commitment to research and innovation have positioned it as a leading technical institution in India. IIT Roorkee offers a wide range of undergraduate, postgraduate, and doctoral programs.
+        </p>
+        <a href="https://www.iitr.ac.in/">Learn More</a>
+      </div>
+
+      <div class="college">
+        <img src="img/iit guw.jpg" alt="College 2">
+        <h3>Indian Institute of Technology, Guwahati</h3>
+        <p>Indian Institute of Technology Guwahati (IIT Guwahati) is a prestigious technical institution located in Guwahati, Assam, India. Established in 1994, it is the sixth member of the Indian Institutes of Technology (IIT) system. IIT Guwahati is known for its academic excellence, research contributions, and emphasis on holistic education.
+        <br>
+        <br>
+        IIT Guwahati's commitment to academic excellence, research, and holistic development has established it as a premier technical institution in India. The institute continues to provide a nurturing environment for students and faculty members to excel in their chosen fields and contribute to the advancement of science, engineering, and technology.
+        </p>
+        <a href="https://www.iitg.ac.in/">Learn More</a>
+      </div>
+
+      <div class="college">
+        <img src="img/IIT-Hyderabad-1.jpg" alt="College 2">
+        <h3>Indian Institute of Technology, Hyderabad</h3>
+        <p>Indian Institute of Technology Hyderabad (IIT Hyderabad) is a prestigious technical institution located in Hyderabad, Telangana, India. Established in 2008, it is one of the newer IITs in India and has quickly gained recognition for its academic excellence, research contributions, and innovative approach to education.
+        <br>
+        <br>
+        IIT Hyderabad, with its focus on interdisciplinary learning, research-oriented approach, and entrepreneurial spirit, is making a mark in the field of science, engineering, and technology. It continues to provide a nurturing environment for students and faculty members to excel, innovate, and contribute to advancements.
+        </p>
+        <a href="https://www.iith.ac.in/">Learn More</a>
+      </div>
+
+    </section>
+    <div class="college">
+      <img src="img/NITT-Main-Gate.JPG" alt="College 2">
+      <h3>National Institute of Technology, Tiruchirappalli</h3>
+      <p>National Institute of Technology Tiruchirappalli (NIT Trichy), formerly known as Regional Engineering College Tiruchirappalli, is a premier technical institution located in Tiruchirappalli, Tamil Nadu, India. Established in 1964, it is one of the 31 National Institutes of Technology in India and is recognized as an Institute of National Importance. NIT Trichy is renowned for its academic excellence, research contributions, and strong industry connections.
+      <br>
+      <br>
+      NIT Trichy's commitment to academic excellence, research, and industry collaboration has positioned it as a leading technical institution in India. The institute continues to produce skilled graduates, contribute to research and innovation, and play a significant role in the development of science, engineering, and technology.
+      </p>
+      <a href="https://www.nitt.edu/">Learn More</a>
+    </div>
+
+    <div class="college">
+      <img src="img/ju2copy.jpg" alt="College 2">
+      <h3>Jadavpur University, Kolkata</h3>
+      <p>Jadavpur University is a renowned educational institution located in Kolkata, West Bengal, India. Established in 1955, it is one of the premier universities in India and is known for its excellence in teaching, research, and cultural activities. The university offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines.
+      <br>
+      <br>
+      Jadavpur University has a dedicated Placement Cell that facilitates the recruitment process and interactions between students and potential employers. The university has a strong network of industry connections and collaborates with companies for internships, projects, and placements. Graduates from Jadavpur University have been placed in reputed national and international companies across various sectors.
+
+      Jadavpur University's rich academic heritage, emphasis on research, vibrant campus life, and strong industry connections make it a sought-after institution for students pursuing higher education. It continues to be a hub for academic excellence, innovation, and cultural activities in the region.
+      </p>
+      <a href="https://www.jaduniv.edu.in/">Learn More</a>
+    </div>
+
+  </main>
+  <br>
+  <br>
+  <section id="table1">
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Number of Colleges</th>
+        <th>Rank</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Category">Medical</td>
+        <td data-label="Number of Colleges">100 +</td>
+        <td data-label="Rank">1 - 100</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Law</td>
+        <td data-label="Number of Colleges">50 +</td>
+        <td data-label="Rank">1 - 50</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Management</td>
+        <td data-label="Number of Colleges">75 +</td>
+        <td data-label="Rank">1 - 60</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Architectire</td>
+        <td data-label="Number of Colleges">60 +</td>
+        <td data-label="Rank">1 - 20</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+  <br>
+  <section id="hero1">
+  <div class="founder-profile">
+    <img class="founder-image" src="img/linkdien new dp-fotor-bg-remover-20230523356162.png" alt="Founder Image">
+    <h2 class="founder-name">Abhi Success</h2>
+    <ul class="social-media-icons">
+      <li><a href="https://www.twitter.com/asuccess_7"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/meetwithabhi"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.instagram.com/asuccess.7"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</section>
+  <br>
+  <footer>
+    <p class="footer1">&copy; 2023 CollegeGyan. All rights reserved.</p>
+  </footer>
+</body>
+</html>

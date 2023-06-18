@@ -1,0 +1,219 @@
+/* CSS styles for the college searching website */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fc0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Main content */
+  main {
+    padding: 20px;
+  }
+  
+  .college-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .college {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .college img {
+    width: 100%;
+    max-height: 45%;
+    object-fit: cover;
+  }
+  
+  .college h3 {
+    margin-top: 10px;
+  }
+  
+  .college p {
+    margin-top: 5px;
+  }
+  
+  .college a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e05227;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .college a:hover {
+    background-color: #0664f1;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #f5eeee;
+    padding: 20px;
+    text-align: center;
+  }
+/* CSS styles for the college searching website */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.highlight{
+color:  #ff5e3a;
+}    
+/* CSS styles for the college searching website */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #ece8e8;
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #f0e7e7;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    font-weight: bolder;
+  }
+.nav-links{
+    text-align: center;
+    align-items: center;
+}
+  
+  nav ul li a.active {
+    /* background-color: #999; */
+    text-align: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: flexbox;
+      align-items: center;
+    }
+  }
+  /* CSS styles for the college searching website */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Search box */
+  .search-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0a1fda;
+  }
+  
+  .fa-search {
+    font-size: 18px;
+  }
+  h2.Abhi{
+    text-align: center;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  h3.h3college{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
+  }
+  body {
+    background-image: url();
+    background-color: #c0b8b8;
+   }
+  h1.abhisuccess{
+    font-family: 'Caveat', cursive;
+    font-size: 350%;
+    font-weight: bolder;
+  }
+  h3.h3college{
+    font-family: 'Caveat', cursive;
+    font-size: 150%;
+  }
+h2.Abhi{
+  font-family: 'Caveat', cursive;
+  font-size: 210%;
+}
+.footer1{
+  font-weight: bolder;
+}
+.highlight1{
+  color: rgb(13, 185, 56);
+}
+  
